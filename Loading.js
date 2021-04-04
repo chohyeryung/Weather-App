@@ -3,12 +3,19 @@ import {StyleSheet, Text, View} from "react-native";
 
 export default function Loading(){
     return <View style={styles.container}>
-        <Text>Getting the wonderful weather</Text>
+        <Text style={styles.text}>Getting the wonderful weather</Text>
     </View>
 }
 
 const styles = StyleSheet.create({
     container:{
         flex:1,
+        backgroundColor:"#f8f7bd",
+        justifyContent : "flex-end",
+        paddingHorizontal:30,
+        paddingVertical:100,
+    },
+    text:{
+        fontSize:20,
     }
 });
