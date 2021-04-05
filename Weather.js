@@ -1,6 +1,6 @@
 import React from "react";
 import { View, Text, StyleSheet, StatusBar } from "react-native";
-import PropTypes from "prop-types";
+import PropTypes from "prop-types"; //proptypes는 전달받은 데이터 유효성을 검증하기 위해 - 타입체크
 import { MaterialCommunityIcons } from "@expo/vector-icons";
 import { LinearGradient } from 'expo-linear-gradient';
 
@@ -45,7 +45,7 @@ const weatherOptions = {
     Clear:{
         iconName:"weather-sunny",
         gradient: ["#FF7300", "#FEF253"],
-        title: "Sunny as fuck",
+        title: "Sunny as Sunny",
         subtitle: "Go get your ass burnt"
     }, 
     Clouds:{
