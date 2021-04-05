@@ -6,8 +6,12 @@ import { MaterialCommunityIcons } from "@expo/vector-icons";
 export default function Weather({ temp }) {
     return (
         <View style={styles.container}>
-            <MaterialCommunityIcons size={66} name="weather-lightning-rainy"></MaterialCommunityIcons>
-            <Text>{temp}</Text>
+            <View style={styles.halfContainer}>
+                <MaterialCommunityIcons size={86} name="weather-lightning-rainy"></MaterialCommunityIcons>
+                <Text>{temp}</Text>
+            </View>
+            <View style={styles.halfContainer} />
+
         </View>
     );
 }
@@ -30,6 +34,11 @@ Weather.PropTypes = {
 
 const styles = StyleSheet.create({
     container : {
+        flex:1,
+        justifyContent:"center",
+        alignItems:"center"
+    },
+    halfContainer:{
         flex:1,
         justifyContent:"center",
         alignItems:"center"
