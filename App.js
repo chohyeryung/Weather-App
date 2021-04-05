@@ -3,6 +3,8 @@ import {Alert} from "react-native";
 import Loading from "./Loading";
 import * as Location from 'expo-location';
 
+const API_KEY = "8474e8626b6bec6602dceef1a44fdd3a";
+
 export default class extends React.Component {
   state = {
     isLoading:true
